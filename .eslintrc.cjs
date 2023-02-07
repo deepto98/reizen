@@ -4,10 +4,9 @@ module.exports = {
   },
   extends: [
     'next/core-web-vitals',
-    'eslint-config-airbnb-base',
-    'eslint-config-airbnb-typescript',
+    'airbnb-base',
+    'airbnb-typescript',
     'eslint-config-prettier',
-    'eslint-plugin-import',
-    'eslint-plugin-prettier',
-  ]
-}
+    'plugin:prettier/recommended',
+  ],
+};
