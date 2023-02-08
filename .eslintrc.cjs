@@ -9,4 +9,7 @@ module.exports = {
     'eslint-config-prettier',
     'plugin:prettier/recommended',
   ],
+  rules: {
+    'no-underscore-dangle': 0,
+  },
 };

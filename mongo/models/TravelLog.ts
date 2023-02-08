@@ -1,3 +1,4 @@
+import { WithId } from 'mongodb';
 import { z } from 'zod';
 import db from '../db';
 
@@ -13,7 +14,8 @@ export const TravelLog = z.object({
 
 // Extract typescript interface, to check type
 export type TravelLog = z.infer<typeof TravelLog>;
+export type TravelLogWithId = WithId<TravelLog>;
 
-export const TravelLogs = db.collection('logs');
+export const TravelLogs = db.collection<TravelLog>('logs');
 
 // export default TravelLogs;
